@@ -25,7 +25,7 @@ Here's a breakdown of the repository structure to help us organize our work:
 ├── experiments/               # Code and results for neuron simulation experiments
 ├── data/                      # Datasets, configurations, and simulation inputs/outputs
 └── README.md                  # This README file
-
+```
 ---
 
 ## Getting Started
