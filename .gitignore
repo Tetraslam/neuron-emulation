@@ -1,16 +1,5 @@
 # Virtual Environment
-venv/
-env/
-ENV/
-.env/
-.venv/
-python*/
-Include/
-Lib/
-Scripts/
-pyvenv.cfg
-.Python
-pip-selfcheck.json
+/venv/
 
 # Python
 __pycache__/
