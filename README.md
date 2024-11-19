@@ -4,7 +4,7 @@ Welcome to the repository for Sapientia Research's Neuron Emulation explorations
 
 ---
 
-## 🚀 Project Objectives
+## Project Objectives
 
 1. **Explore Existing Paradigms**: Study existing neuron simulation frameworks and paradigms, identifying their strengths, limitations, and potential areas for improvement.
 2. **Design Novel Emulation Paradigms**: Build our own neuron emulation framework tailored for general-purpose biocomputing applications.
@@ -12,7 +12,7 @@ Welcome to the repository for Sapientia Research's Neuron Emulation explorations
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 Here's a breakdown of the repository structure to help us organize our work:
 
@@ -28,7 +28,7 @@ Here's a breakdown of the repository structure to help us organize our work:
 
 ---
 
-## 🛠️ Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 ```bash
@@ -37,19 +37,49 @@ cd neuron-emulation
 ```
 
 ### 2. Setup Environment
-Ensure you have the necessary tools and libraries for neuron simulation. For now, we recommend setting up Python with the following packages:
-- [NEURON](https://www.neuron.yale.edu/neuron/)
-- [Brian2](https://brian2.readthedocs.io/en/stable/)
-- [NEST](https://www.nest-simulator.org/)
-- [PyNN](https://neuralensemble.org/PyNN/)
-- Any other frameworks we decide to explore will sooner or later be added here.
 
-Install dependencies:
+First, create and activate a Python virtual environment:
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment (Windows)
+.\venv\Scripts\activate
+
+# Activate virtual environment (Linux/Mac)
+source venv/bin/activate
+```
+
+Next, install NEURON manually from [their website](https://www.neuron.yale.edu/neuron/download). After installation, install the remaining dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Workflow Overview
+The repository includes pre-commit hooks for code quality. Install them with:
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+Note: The repository is configured to ignore virtual environments, cache files, and experiment outputs. Large datasets and experiment results should be stored elsewhere and not committed to version control. Consider using [DVC](https://dvc.org/) for managing large data files if needed.
+
+### 3. Start a New Experiment
+
+To begin a new experiment:
+1. Copy the experiment template:
+```bash
+cp experiments/template/experiment_template.py experiments/your_experiment_name.py
+```
+2. Modify the experiment configuration and implementation in your new file
+3. Run your experiment:
+```bash
+python experiments/your_experiment_name.py
+```
+
+Your results will be automatically logged and tracked using Weights & Biases.
+
+### 4. Workflow Overview
+
 #### Phase 1: Explore Existing Paradigms
 - Document findings in `docs/` under `existing_paradigms/`.
 - Write test scripts for experiments in `experiments/`.
@@ -60,7 +90,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📚 Documentation Guidelines
+## Documentation Guidelines
 
 - **Write Clear Notes**: Use Markdown files in `docs/` to summarize findings and ideas.
 - **Comment Code Thoroughly**: Always comment your code in `experiments/` and `tools/` to make it easy to follow.
@@ -69,7 +99,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📝 Contributing
+## Contributing
 
 1. Create a branch for your work:
    ```bash
@@ -88,7 +118,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎯 Next Steps
+## Next Steps
 
 ### First Task: Explore Existing Paradigms
 - Research popular neuron simulation frameworks like NEURON, NEST, and Brian2.
@@ -101,7 +131,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧠 Knowledge Sharing
+## Knowledge Sharing
 
 We’re building this suite to empower not just ourselves, but potentially others in the biocomputing community. Let’s document our journey thoroughly, share insights, and stay organized to ensure that progress is continuous and efficient.
 
