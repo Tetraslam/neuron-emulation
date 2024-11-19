@@ -1,0 +1,36 @@
+# Core simulation packages
+neuron>=8.2.2
+brian2>=2.5.1
+nest-simulator>=3.3
+PyNN>=0.10.1
+
+# Scientific computing
+numpy>=1.23.0
+scipy>=1.9.0
+pandas>=1.5.0
+matplotlib>=3.6.0
+
+# Machine Learning
+torch>=2.0.0
+scikit-learn>=1.2.0
+
+# Jupyter environment
+jupyter>=1.0.0
+jupyterlab>=3.6.0
+ipykernel>=6.22.0
+
+# Development tools
+black>=23.3.0  # Code formatting
+flake8>=6.0.0  # Code linting
+pytest>=7.3.1  # Testing
+pytest-cov>=4.0.0  # Test coverage
+mypy>=1.2.0  # Type checking
+
+# Documentation
+sphinx>=6.1.3
+sphinx-rtd-theme>=1.2.0
+nbsphinx>=0.9.1
+
+# Version control and reproducibility
+dvc>=2.58.0  # Data version control
+wandb>=0.15.0  # Experiment tracking
