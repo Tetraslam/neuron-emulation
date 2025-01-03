@@ -1,0 +1,11 @@
+{
+    "experiment_name": "shortest_path",
+    "random_seed": 42,
+    "data_path": "../data",
+    "output_path": "../results",
+    "wandb_project": "neuron-emulation",
+    "neuron_params": [
+        "izhikevich"
+    ],
+    "simulation_params": {}
+}

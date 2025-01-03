@@ -1,7 +1,7 @@
 # Core simulation packages
-neuron>=8.2.2
+neuron>=8.2.2 # manual installation
 brian2>=2.5.1
-nest-simulator>=3.3
+nest-simulator>=3.3  # This also requires manual installation
 PyNN>=0.10.1
 
 # Scientific computing
@@ -22,7 +22,7 @@ ipykernel>=6.22.0
 # Development tools
 black>=23.3.0  # Code formatting
 flake8>=6.0.0  # Code linting
-pytest>=7.3.1  # Testing
+pytest>=7.4.3  # compatability with brian2 2.8.0
 pytest-cov>=4.0.0  # Test coverage
 mypy>=1.2.0  # Type checking
 
@@ -33,4 +33,4 @@ nbsphinx>=0.9.1
 
 # Version control and reproducibility
 dvc>=2.58.0  # Data version control
-wandb>=0.15.0  # Experiment tracking
+wandb>=0.19.1  # Experiment tracking
